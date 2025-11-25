@@ -4,7 +4,7 @@ fn birthday(s: &[i32], d: i32, m: i32) -> i32 {
         let mut sum = 0;
         let mut j = 0;    
         while (i+j < s.len() && j < m as usize) {
-            sum = sum + s[i+j as usize];
+            sum = sum + s[i+j];
             j += 1;
         }
         if sum == d {
