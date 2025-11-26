@@ -7,7 +7,7 @@ fn countingValleys(steps: i32, path: &str) -> i32 {
             if level == 0 {  // if we arrive again to sea level we just leaved a valley
                 valleys += 1;
             }
-        } else if step == 'D' {
+        } else {
             level -= 1;
         }
     }
