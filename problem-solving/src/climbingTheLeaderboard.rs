@@ -5,9 +5,6 @@ fn climbingLeaderboard(ranked: &[i32], player: &[i32]) -> Vec<i32> {
     for score in player.to_vec() {
         // Remove all ranked scores less than or equal to the player's score
         while let Some(&last) = ranked.last() {
-            print!("Last ranked score: {}", last);
-            print!(" Player score: {}", score);
-            println!();
             if score >= last {
                 ranked.pop();
             } else {
